@@ -1,0 +1,53 @@
+Compile codes: 
+g++ process_pseudo_mpileup.cpp -o process_pseudo_mpileup.x
+g++ common_lines_to_files.cpp -o common_lines_to_files.x -lz -lboost_iostreams
+g++ estimate_mut_rate.cpp -o estimate_mut_rate.x -lz -lboost_iostreams
+
+Start converting pileup files to ATCG human readable data.
+
+Start converting ancestor...
+
+Pileup finished, total lines: 10000
+
+Ancestor's pileup conversion finished. Start converting endpoint...
+
+Pileup finished, total lines: 10000
+
+Endpoint's pileup conversion finished.
+
+Start reading ancestor and endpoint ATCG data looking for common lines...
+
+File 1 opened.
+File 2 opened.
+
+Start reading files.
+
+File 1 finished before file 2.
+Last line was: chr1 2662299
+---> Found in chr1 2389 common lines
+
+Terminated: 
+total common lines found 2389 of 9944 red from file 2.
+Lines not found 7555
+File 1 ended before file 2 was totally red.
+File 1 total lines: 9995
+Otput written on files.
+
+Start program to estimate mutation rate.
+
+
+Ancestor file opened.
+Endpoint file opened.
+
+Start reading files.
+
+File readings ended: total lines 2389
+Discarded: 2179
+Parameter used extant = 20
+Muted bases:0
+Not muted bases: 210
+muted/(muted + not_muted) = 0
+Mutatior rate min [d/(b+d) = 0.45] = -0
+Mutation rate max [d/(b+d) = 0.1] = -0
+
+Terminated.
