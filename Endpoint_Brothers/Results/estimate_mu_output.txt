@@ -1,0 +1,67 @@
+time ./estimate_mu.x
+
+CRC1307-02-0.all_common.gz opened.
+
+CRC1307-09-0.all_common.gz opened.
+
+CRC1307-02-1-E.all_common.gz opened.
+
+CRC1307-09-1-B.all_common.gz opened.
+
+Start reading files...
+100 millions of lines read.
+200 millions of lines read.
+300 millions of lines read.
+400 millions of lines read.
+500 millions of lines read.
+600 millions of lines read.
+700 millions of lines read.
+800 millions of lines read.
+900 millions of lines read.
+1000 millions of lines read.
+Total bases in files: 1020287007
+
+Total lines discarded by threshold (ancestor coverage min): 505382407
+Both endpoints not muted: 497889223
+Both endpoints muted: 353844
+Both endpoints with the same mutation: 242391
+One endpoint muted and one not: 16661533
+Total lines considered for the estimation of mut rate (denominator): 514662209
+
+
+Computing mutation rate for endpoint CRC1307-02-1-E
+
+extant	muted_bases	p_hat	min_mu	max_mu
+8	2	3.88604e-09	6.42464e-11	2.81568e-10
+12	26	5.05186e-08	5.32259e-10	2.34487e-09
+16	40	7.77209e-08	6.00902e-10	2.65375e-09
+20	60	1.16581e-07	7.11871e-10	3.14829e-09
+24	72	1.39898e-07	7.05861e-10	3.12461e-09
+28	77	1.49613e-07	6.4316e-10	2.84891e-09
+32	86	1.671e-07	6.25729e-10	2.77305e-09
+48	142	2.75909e-07	6.81668e-10	3.02433e-09
+75	352	6.83944e-07	1.07346e-09	4.76635e-09
+100	995	1.93331e-06	2.26833e-09	1.00752e-08
+
+
+Computing mutation rate for endpoint CRC1307-09-1-B
+
+extant	muted_bases	p_hat	min_mu	max_mu
+8	0	0	-0	-0
+12	15	2.91453e-08	3.07073e-10	1.35281e-09
+16	30	5.82907e-08	4.50676e-10	1.99032e-09
+20	46	8.9379e-08	5.45768e-10	2.41369e-09
+24	58	1.12695e-07	5.6861e-10	2.51705e-09
+28	72	1.39898e-07	6.01396e-10	2.66392e-09
+32	94	1.82644e-07	6.83936e-10	3.03101e-09
+48	198	3.84718e-07	9.50494e-10	4.21702e-09
+75	403	7.83038e-07	1.22899e-09	5.45693e-09
+100	1071	2.08098e-06	2.44158e-09	1.08448e-08
+
+Results written on .csv files.
+Starting ROOT graphs.
+
+real	89m47,817s
+user	79m46,646s
+sys	0m7,422s
+
